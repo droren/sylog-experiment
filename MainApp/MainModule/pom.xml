@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>se.sylog.componenttest.mainapp</groupId>
+    <artifactId>mainApp</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>MainModule</artifactId>
+  <name>MainModule</name>
+  <description>Main Module with Main</description>
+	<distributionManagement>
+		<repository>
+			<id>central</id>
+			<name>dennis-Latitude-E7470-releases</name>
+			<url>http://localhost:8081/artifactory/libs-release</url>
+		</repository>
+
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>dennis-Latitude-E7470-snapshots</name>
+			<url>http://localhost:8081/artifactory/libs-snapshot</url>
+		</snapshotRepository>
+
+
+	</distributionManagement>
+  <dependencies>
+  	<dependency>
+  		<groupId>se.sylog.componenttest.mainapp</groupId>
+  		<artifactId>submoduleTwo</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>  
+</project>
