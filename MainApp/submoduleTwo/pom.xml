@@ -3,10 +3,11 @@
   <parent>
     <groupId>se.sylog.componenttest.mainapp</groupId>
     <artifactId>mainApp</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
   </parent>
   <artifactId>submoduleTwo</artifactId>
   <name>submoduleTwo</name>
+  <version>0.0.1</version>
   <description>This is the second module in the app</description>
 	<distributionManagement>
 		<repository>
