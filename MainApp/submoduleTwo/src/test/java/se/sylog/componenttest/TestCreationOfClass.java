@@ -10,14 +10,30 @@ public class TestCreationOfClass {
 
 	@Test
 	public void testMyPersonalPrinter() {
-		MyPersonalPrinter one = new MyPersonalPrinter(); 
+		MyPersonalPrinter one = new MyPersonalPrinter(false); 
 		assertNotNull(one);
 	}
 
 	@Test
 	public void testToString() {
 		MyPersonalPrinter one = new MyPersonalPrinter();
-		assertNotEquals(one.toString(), "");
+		assertEquals(one.toString(), "");
+	}
+	
+	@Test
+	public void testSetContents() {
+		MyPersonalPrinter one = new MyPersonalPrinter();
+		assertEquals(one.toString(), "");
+		one.setToPrint("test-contents");
+		assertEquals(one.toString(), "test-contents");
+	}
+
+	@Test
+	public void testgetToPrint() {
+		MyPersonalPrinter one = new MyPersonalPrinter();
+		assertEquals(one.getToPrint(), "");
+		one.setToPrint("test-contents");
+		assertEquals(one.getToPrint(), "test-contents");
 	}
 
 }

@@ -3,8 +3,14 @@ package se.sylog.componenttest;
 public class MyPersonalPrinter {
 	String toPrint;
 	
+	MyPersonalPrinter(boolean b) {
+		if (b) {
+			System.out.println("Created object MyPersonalPrinter");
+		}
+		toPrint = "";
+	}
+	
 	MyPersonalPrinter() {
-		System.out.println("Created object MyPersonalPrinter");
 		toPrint = "";
 	}
 
@@ -19,4 +25,9 @@ public class MyPersonalPrinter {
 	public void printToPrint() {
 		System.out.println(toPrint);
 	}
+	
+	public String toString() {
+		return toPrint;
+	}
+
 }
