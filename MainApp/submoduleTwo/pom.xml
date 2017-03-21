@@ -7,7 +7,7 @@
   </parent>
   <artifactId>submoduleTwo</artifactId>
   <name>submoduleTwo</name>
-  <version>0.0.2</version>
+  <version>1.0.2</version>
   <description>This is the second module in the app</description>
 	<distributionManagement>
 		<repository>
